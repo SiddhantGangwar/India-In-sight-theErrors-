@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kalam', cursive;
+    scroll-behavior: smooth;
+}
+html{
+    overflow-x: hidden;
+    font-size: 62.5%;
+  }
+
+/* burger section starts */
+.burger{
+    display: none;
+position: absolute;
+cursor: pointer;
+right: 8%;
+top: 15px;
+}
+
+
+.line{
+    width: 33px;
+    background-color: black;
+    height: 4px;
+    margin: 3px 3px;
+}
+
+
+/* burger section ends */
+/* .heading{
+    color: #333;
+    font-size: 3.5rem;
+    padding: 1rem;
+    padding-top: 6rem;
+    text-align: center;
+    letter-spacing: .2rem;
+}
+.heading span{
+    color: #0098a1;
+} */
+/*body{
+    background: #333;
+    height: 3000;
+}
+img{
+    vertical-align: middle;
+    border-style: none;
+  }*/
+  .menu-icon{
+    height: 30px;
+    margin: 2px 15px;
+    cursor: pointer;
+    display: none;
+  }
+header{
+  width: 96%;
+  background:#fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top:0rem; left:50%;
+  transform: translateX(-50%);
+  border-radius: .5rem;
+  box-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+  padding:.3rem 2rem;
+  transition: .2s linear;
+  z-index: 1000;
+  font-family: 'Kalam', cursive;
+
+
+}
+
+.header-active{
+  top:0;
+  width:100%;
+  border-radius: 0;
+}
+
+header .logo{
+  color:#333;
+  font-size: 3rem;
+  text-decoration: none;
+}
+
+header .logo span{
+  color:#0098a1;
+}
+
+header .navbar ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin:0; padding:0;
+}
+
+header .navbar ul li{
+  margin:0 1rem;
+}
+
+header .navbar ul li a{
+  font-size: 2rem;
+  color:#333;
+  transition: .2s linear;
+  text-decoration: none;
+
+}
+
+
+/* header .navbar ul li .active, */
+header .navbar ul li a:hover{
+  color: #0098a1;
+}
+
+header .fa-bars{
+  font-size: 3rem;
+  color:#0098a1;
+  cursor: pointer;
+  display: none;
+}
+
+
+
+
+.rightNav{
+
+    /* background-color: rebeccapurple; */
+    width: 50%;
+    text-align: center;
+    padding: 0;
+    height: 45px;
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 150px;
+    border: 2px bold white;
+
+
+} 
+
+.logo img{
+    width: 32%
+    
+    }
+ 
+#search{
+    margin: 12px;
+    border: 2px bold white;
+    border-radius: 4px;
+}    
+
+
+
+
+/* #navbar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.02rem;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 3px 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+
+}
+
+#navbar ul li a:hover{
+    cursor: pointer;
+    color: black;
+    background-color: white;
+} */
+
+/* #navbar{
+    position: relative;
+    padding: 12px;
+}  */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 220px;
+    align-items: center;
+    justify-content: center;
+    height: 658px;
+    /* height: 320px; */
+}
+
+#home::before{
+    content: "";
+    background: url('../img/AgraBackground.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 750px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+}
+
+.h-primary{
+    font-size: 3.2rem;
+    padding: 30px;
+    text-align: center;
+    font-family: 'Kalam', cursive;
+}
+
+#home h1{
+    text-align: center;
+}
+
+#home p{
+    font-size: 35px;
+    margin: 15px;
+    text-align: center;
+    font-family: 'Kalam', cursive;
+}
+
+.btn{
+    width: 10%;
+    margin: 10px ;
+    color: black;
+    background:none;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#services{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+
+#services .box{
+    /* border: 2px solid black; */
+    margin: 10px;
+}
+
+#services .box img{
+    height: 200px;
+    display: block;
+    margin: auto;
+    border: 2px solid black;
+    
+}
+
+.services-container{
+    margin: 0px;
+    margin-top: 80px;
+}
+
+.secRight{
+    /* height: 400px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-family: 'Kalam', cursive;
+    border: 2px solid grey;
+    box-shadow: 10px 5px 5px 3px gray;
+    border-radius: 25px;
+    margin: 30px 30px;
+}
+.secLeft{
+    /* height: 400px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-direction: row-reverse;
+    font-family: 'Kalam', cursive;
+    border: 2px solid grey;
+    box-shadow: 10px 5px 5px 3px gray;
+    border-radius: 25px;
+    margin: 30px 30px;
+}
+
+.ImgFluid{
+    height: 250px;
+    margin: 50px;
+    border: 2px solid black;
+}
+
+.paras{
+    margin: 20px;
+}
+
+.sectionTag{
+    font-size: 30px;
+    font-family: 'Kalam', cursive;
+    color: #0098a1;
+}
+
+.sectionSubTag{
+    font-size: 18px;
+    font-family: 'Kalam', cursive;
+}
+
+.link-text{
+    font-size: 18px;
+}
+
+.lsize{
+    font-size: 18px;
+}
+
+.footer-background{
+    background-image: url('../img/FreeImagePicture2.jpg');
+}
+
+.text-footer{
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    color: white;
+    font-family: 'Kalam', cursive;
+}
+
+/* footer  */
+.footer{
+    /* background: #000; */
+    background-color: #0098a1;
+    /* color: #8a8a8a; */
+    color: white;
+    font-size: 15px;
+    padding: 25px 0 10px;
+    display:flex;
+    padding: 23px 187px;
+}
+.container{
+    /* background-color: black; */
+}
+.footer p{
+    /* color: #8a8a8a; */
+    color: white;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.app-logo{
+ margin-top: 20px;   
+}
+.app-logo img{
+    width: 140px;
+}
+.footerlogo{
+    color: white;
+}
+.footer hr{
+    border: none;
+    background: #b5b5bb;
+    
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright{
+    text-align: center;
+    background-color: black;
+    /* color: #8a8a8a; */
+    color: white;
+    padding: 10px 0px;
+}
+.hrline{
+    /* width: 2px; */
+    color: #8a8a8a;
+    background-color:#8a8a8a ;
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+    
+}
+/* all products page */
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+.footer-col-3 ul li a{
+     text-decoration: none;
+     /* color: #8a8a8a; */
+     color: white;
+}
+.footer-col-3 ul li a:hover{
+    color:black;
+}
+
+ /* logo animation  */
+ .ml1 {
+    font-weight: 900;
+    font-size: 3.5em;
+  }
+  
+  .ml1 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+  
+  .ml1 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+  }
+  .logoanimation{
+      text-decoration: none;
+      color: black;
+  }
+
+  /* animation */
+  .ml9 {
+    position: relative;
+    font-weight: 200;
+    font-size: 4em;
+  }
+  
+  .ml9 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 4.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  
+  .ml9 .letter {
+    transform-origin: 50% 100%;
+    display: inline-block;
+    line-height: 1em;
+    font-size: 12rem;
+    font-weight: bolder;
+  }

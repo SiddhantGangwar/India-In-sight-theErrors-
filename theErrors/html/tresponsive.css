@@ -1,0 +1,255 @@
+/* media queries*/
+@media(max-width:991px){
+    .home{
+        flex-flow: column;
+        padding: 1.4rem;
+    }
+    .home .content{
+        text-align: center;
+    }
+    .home .content h1{
+        font-size: 5.5rem;
+    }
+    .home .content p{
+        font-size: 1.8rem;
+        padding: 0;
+        border: none;
+    }
+    .head1{
+      font-size: 3rem;
+    }
+    /* footer section  */
+.footer-col-1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer{
+  display: block;
+  padding: 1px 0px;
+  padding-top: 20px;
+}
+}
+@media(max-width:600px){
+   
+html{
+  font-size: 55%;
+}
+/* header .fa-bars{
+  display: block;
+}
+header .navbar{
+  position: fixed;
+  top: -100rem; left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.3rem 0.5rem rgba(0,0,0,.3);
+  z-index: 1000;
+  transition: .2s linear;
+  opacity:0;
+}
+header .navbar ul{
+  flex-flow: column;
+}
+header .navbar ul li{
+  margin: 1rem 0;
+  width:100%;
+  text-align: center;
+}
+header .navbar ul li a{
+display: block;
+font-size: 3rem;
+}
+header .nav-toggle{
+  top:5.5rem;
+  opacity: 1;
+} */
+.card-container{
+  font-size: 4rem;
+  display: flex;
+  flex-direction: column;
+  float: left;
+}
+.exp-container{
+  font-size: 4rem;
+  display: flex;
+  flex-direction: column;
+  float: left;
+}
+.inspired h1{
+  float:left;
+  padding-left: 80px;
+}
+.inspired h1::before{
+  align-items: center;
+  margin-left: 75px;
+}
+.inspired p{
+  float: left;
+  padding-left: 50px;
+}
+}
+/* .inspired{
+  display: flex;
+  flex-direction:column;
+} */
+/* .card-container .content .title{
+top: 0.6em;
+padding: 0 .009em;
+} */
+/* footer section  */
+/* .footer-col-1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer{
+  display: block;
+  padding: 1px 0px;
+  padding-top: 20px;
+} */
+/* footer section  */
+/* .footer-col-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer{
+    display: grid;
+    padding: 1px 0px;
+    padding-top: 20px;
+} */
+/* media query for less than 600 screen size */
+/* @media only screen and (max-width: 600px){
+  
+  .row{
+     text-align: center;
+  }
+  .col-2,.col-3,.col-4{
+      flex-basis: 100%;
+  } */
+
+@media(max-width:500px){
+  .home .form-container{
+      width: 100%;
+  }
+  .home .form-container form{
+     width: 81%;
+     margin: 15rem 0;
+  }
+  .home .form-container form input{
+      width: 100%;
+  }
+}
+ 
+ 
+
+/* media query for less than 600 screen size */
+@media only screen and (max-width: 600px){
+  /* nav bar section starts */
+
+     /* burger section starts  */
+     .burger{
+
+      display: block;
+  }
+  .h-nav-resp{
+      height: 170px;
+      /* transition:all 5.7s ; */
+
+
+  }
+  .v-class-resp{
+      opacity: 0;
+  }
+  .head-h {
+      height: 36px;
+      /* transition:all 5.7s ; */
+
+  }
+  .scroll-class{
+      /* transition: all 0.5s ease-out; */
+  }
+  
+  .navbar{
+      /* height: 80px; */
+      /* transition:all 5.7s ; */
+
+  }
+
+  /* burger section ends */
+
+  .menu-icon{
+      height: 30px;
+      /* margin: 2px 15px; */
+      cursor: pointer;
+      /* display: ruby; */
+      
+    }
+  .nav-list{
+       flex-direction: column;
+      /* transition:all 5.7s ; */
+       
+       }
+   header{
+       width: 94%;
+       margin: 0px 0px;
+       display: flex;
+       flex-direction: column;
+   }
+   header ul{
+       display: flex;
+       flex-direction: column;
+   }
+   header .navbar  ul li a{
+       cursor: pointer;
+       font-size: 2.0rem;
+   }
+   header .logo{
+      font-size: 25px;
+      width: 62%;
+      height: 50px;
+  }
+ 
+      
+  
+  /* animation section starts  */
+.ml1{
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+/* animation section ends  */
+   
+   /* nav section ends  */
+   
+  .row{
+     text-align: center;
+  }
+  .col-2,.col-3,.col-4{
+      flex-basis: 100%;
+  }
+
+
+}
+/* @media only screen and (max-width: 600px){
+    
+  .row{
+     text-align: center;
+  }
+  .col-2,.col-3,.col-4{
+      flex-basis: 100%;
+  } */
+
+
+
+
+/* media queries end*/
