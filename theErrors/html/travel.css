@@ -554,7 +554,7 @@ header .fa-bars{
 
 /* review section start */
 .review{
-    background: url(/review11.jpg), linear-gradient(#0098a1, #0098a1);
+    background: url(./images/review11.jpg), linear-gradient(#0098a1, #0098a1);
      background-size: cover;
     background-position: center;
     background-attachment: fixed;
